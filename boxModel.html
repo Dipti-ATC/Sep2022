@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>box-model</title>
+    <style>
+      /* intialize css */
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      .mydiv1 {
+        margin: 37px;
+        background-color: aqua;
+        border: 3px solid rebeccapurple;
+        padding: 11px;
+        float: right;
+        width: 40%;
+      }
+      .mydiv2 {
+        background-color: rgb(27, 116, 116);
+        border: 3px solid rgb(80, 16, 144);
+       /* We can set margin/padding for  top, bottom, left and right like this */
+        /* margin-top: 30px;
+        margin-left: 60px;
+        margin-bottom: 90px;
+        margin-right: 100px; */
+        /* shorthandfor margin top-left-bottom-right- clockwise */
+        margin: 30px 60px 90px auto;
+        margin: 20px 40px;
+        width: 40%;
+        float: left;
+      }
+      .mydiv3 {
+        background-color: rgb(140, 226, 111);
+        border: 3px solid rgb(201, 34, 90);
+        /* padding-top: 20px;
+            padding-left: 40px ;
+            padding-bottom: 60px;
+            padding-right: 80px; */
+        /* shorthand for all direction */
+        padding: 20px 40px 60px 80px;
+        /* shorthand for top & bottom same and right & left same */
+        padding: 20px 15px;
+        box-sizing: border-box;
+        width: 400px;
+        /* clear to float the values could be - left/right/both */
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- div*3>h1*1p*2 -->
+    <!-- div.mydiv>h1*1#myheading -->
+    <div class="mydiv1">
+      <h2>My heading1</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+        delectus nisi corrupti esse, voluptates sunt exercitationem, culpa
+        doloribus architecto ea earum consequuntur harum?
+      </p>
+    </div>
+    <div class="mydiv2">
+      <h2>My heading2</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+        delectus nisi corrupti esse, voluptates sunt exercitationem, culpa
+        doloribus architecto ea earum consequuntur harum?
+      </p>
+    </div>
+    <div class="mydiv3">
+      <h2>My heading3</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+        delectus nisi corrupti esse, voluptates sunt exercitationem, culpa
+        doloribus architecto ea earum consequuntur harum?
+      </p>
+    </div>
+  </body>
+</html>

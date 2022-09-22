@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class , ID, Div & Box Model</title>
+    <author> </author>
+
+    <style>
+      body {
+        font-size: 20px;
+      }
+      section {
+        border: 4px solid rgb(25, 24, 24);
+      }
+      #greeting {
+        color: aqua;
+        background-color: blueviolet;
+      }
+      .chat {
+        color: beige;
+        background-color: brown;
+      }
+      .more-style {
+        /* font-size: 25px; */
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      #diff-para {
+        border: 2px solid blue;
+      }
+      #hed1 {
+        color: rgb(151, 151, 59);
+        background-color: rgb(208, 35, 35);
+      }
+      #hed2 {
+        color: rgb(41, 41, 37);
+        background-color: rgb(227, 214, 214);
+      }
+      #hed3 {
+        color: rgb(164, 43, 75);
+        background-color: rgb(26, 28, 21);
+      }
+      .div1 {
+        color: rgb(74, 15, 203);
+        background-color: rgb(39, 42, 33);
+      }
+      .div2 {
+        color: rgb(22, 193, 93);
+        background-color: rgb(174, 25, 184);
+      }
+      .div3 {
+        color: rgb(172, 144, 232);
+        background-color: rgb(154, 227, 8);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- class & id -->
+    <p id="greeting">hello</p>
+    <p class="chat">How are you</p>
+    <p class="chat">Where do you live</p>
+    <p class="chat">have you eaten?</p>
+    <!-- div -->
+    <div class="chat">
+      <p>How are you</p>
+      <p>Where do you live</p>
+      <p>have you eaten?</p>
+    </div>
+    <!-- To apply two classes use space to seprate them like "chat more-style" -->
+    <div class="chat more-style">
+      <p>How are you</p>
+      <p id="diff-para">Where do you live</p>
+      <p>have you eaten?</p>
+    </div>
+    <!-- create 3 div with 1 H1 & two paragraphs -->
+    <!-- div*3>h1*1p*2 -->
+    <section>
+      <div class="div1">
+        <h1 id="hed1">How are you</h1>
+        <p>How are you</p>
+        <p>How are you</p>
+      </div>
+      <div class="div2">
+        <h1 id="hed2">How are you</h1>
+        <p>How are you</p>
+        <p>How are you</p>
+      </div>
+      <div class="div3">
+        <h1 id="hed3">How are you</h1>
+        <p>How are you</p>
+        <p>How are you</p>
+      </div>
+    </section>
+  </body>
+</html>
