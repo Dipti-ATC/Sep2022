@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* usually div are block element to make them inline we use inline or inline-block */
+      .box {
+        display: inline-block;
+        height: 100px;
+        width: 100px;
+        border: 2px solid red;
+        margin: 10px;
+      }
+      /* a tag is in inline element and therefore to push it to next line use display block  */
+      a {
+        display: block;
+      }
+      /* when your div have content which doesn't fit in given height & width it overflows */
+      #box1 {
+        /* overflow: hidden; */
+        /* overflow:scroll; */
+        overflow-x: hidden;
+        overflow-y: scroll;
+      }
+      /* If the content is larger than the maximum width, it will automatically change the height of the element. */
+      #mwidth {
+        border: 2px solid blue;
+        max-width: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- div#box$.box*3 -->
+    <div id="box1" class="box">
+      1
+      <p>
+        on neque rerum quas veritatis odit ut fugit possimus minus pariatur quo
+        accusamus ducimus quasi voluptate repellendus inventore a, in eum velit
+        sunt dicta! Debitis tempore in, exercitationem vel obcaecati non
+        aspernatur accusamus omnis necessitatibus assumenda dolor? Error
+        repudiandae, ipsa, distinctio aliquid atque doloremque velit modi autem
+        iusto beatae est placeat nemo dolorum deleniti. Cum ut eaque fugit, m
+        quos repudiandae, unde ipsam accusantium cum aliquam quo nemo non quod
+        reiciendis. Eaque autem maxime eos, m
+      </p>
+    </div>
+    <div id="box2" class="box">2</div>
+    <div id="box3" class="box">3</div>
+    <a href="#"> link1 </a>
+    <a href="#"> link2 </a>
+    <a href="#"> link3 </a>
+
+    <div id="mwidth">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium
+      voluptatibus praesentium quam harum vero ipsa quo libero. Et quod neque
+      consequatur quos voluptatibus alias voluptate error laboriosam ipsa? Illum
+      tempore labore atque iusto nulla, quaerat, fugit placeat voluptatem
+      repudiandae maiores velit quisquam ratione esse modi consectetur dicta
+      porro magni eveniet in obcaecati accusantium inventore. Perspiciatis
+      aperiam recusandae maxime omnis. Soluta officia quas quos aliquam debitis
+      magni odit illum consequuntur eius ab atque a dignissimos, asperiores
+      ratione. Inventore ipsa assumenda quibusdam sunt, minus fuga optio, omnis
+      adipisci ipsum voluptates ab, temporibus dolorum molestiae voluptas! Velit
+      asperiores aliquam iusto porro quis neque?
+    </div>
+  </body>
+</html>

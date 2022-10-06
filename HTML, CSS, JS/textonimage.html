@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text on image</title>
+  </head>
+  <style>
+    /* reset the css */
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .container {
+      position: relative;
+      border: 2px solid red;
+    }
+    #top-left {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    #top-right {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+    #bottom-right {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+    #bottom-left {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+    #center {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      text-align: center;
+    }
+    img {
+      opacity: 0.5;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+    }
+    a:hover {
+      background-color: black;
+      color: chartreuse;
+    }
+    .btn {
+      background-color: chartreuse;
+      padding: 10px;
+      border: 1px solid rgb(93, 171, 15);
+      border-radius: 15px;
+    }
+    button:hover {
+      background-color: black;
+      color: chartreuse;
+      cursor: pointer;
+    }
+  </style>
+  <body>
+    <!-- div.container>img+h1 -->
+    <div class="container">
+      <img height="500" width="100%" src="door.jpg" alt="closed door" />
+      <h1 id="top-left">Open the door</h1>
+      <h1 id="top-right">Open the door</h1>
+      <h1 id="bottom-left">Open the door</h1>
+      <h1 id="bottom-right">Open the door</h1>
+      <div id="center">
+        <h1>Open the door</h1>
+        <!-- style the a tag as a nice button -->
+        <a class="btn" href="audio-video.html">Practice Audio/Video</a>
+        <!-- style the button as a anchor tag -->
+        <button class="btn" id="mybtn">Click here</button>
+      </div>
+    </div>
+  </body>
+</html>

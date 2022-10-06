@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        height: 3444px;
+        position: relative;
+      }
+      .box {
+        height: 100px;
+        width: 100px;
+        float: left;
+        background-color: brown;
+        margin: 10px;
+      }
+      /* CSS Position: static (default), relative, absolute, fixed, sticky */
+      /* relative: Positions the element relative to its normal positon and will leave a gap at its normal position*/
+      /* uncomment and check out the behaviour */
+      /* #box2{
+        position: relative;
+        top:20px;
+        left:50px;
+       } */
+      /* absolute: Positions the element relative to the positon of its first parent*/
+      /* position: absolute; */
+      #box2{
+        position: absolute;
+        top:20px;
+        left:50px;
+       }
+      /* fixed: Positions the element relative to the browser window; */
+      /* position: fixed it will not move;*/
+      /* #box2{
+        position: fixed;
+        top:20px;
+        left:50px;
+       } */
+      /* sticky: Positions the element relative to the users scroll position */
+      /* #box2 {
+        position: sticky;
+        top: 300px;
+      } */
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="box1" class="box">1</div>
+      <div id="box2" class="box">2</div>
+      <div id="box3" class="box">3</div>
+      <div id="box4" class="box">4</div>
+    </div>
+  </body>
+</html>
