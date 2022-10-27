@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=divdi, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* intialize */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #397e83;
+        color: #fdfdfd;
+      }
+      .wrapper {
+        width: 90%;
+        margin: auto;
+      }
+      /* navigation css */
+      .myheader .nav {
+        display: flex;
+        justify-content: flex-end;
+      }
+      .myheader {
+        padding-top: 10px;
+        height: 200px;
+      }
+      #cname {
+        width: 110px;
+        align-self: center;
+        font-size: 40px;
+        display: inline-block;
+        padding-top: px;
+      }
+      .nav {
+        margin-top: -40px;
+        align-self: center;
+      }
+      .nav li {
+        list-style-type: none;
+        margin-left:10px;
+        margin-right:10px;
+      }
+      .nav a {
+        display: block;
+        color: #fdfdfd;
+        text-align: center;
+        padding: 10px;
+        text-decoration: none;
+        font-size: 25px;
+      }
+      /* main container css */
+      .container {
+        display: flex;
+        background-color: burlywood;
+       
+      }
+      .item {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(65, 69, 51);
+        margin: 5px;
+        padding:5px;
+      }
+      #col1 {
+        /* flex-grow:2; */
+        /* shorthand for flex grow, shrink & basis */
+        flex: 2 0 0; 
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- start header -->
+      <header class="myheader">
+        <h1 id="cname">Pioneer</h1>
+        <nav>
+          <ul class="nav">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Product</a></li>
+            <li><a href="">Contact Us</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!-- end header -->
+      <div class="container">
+        <!-- div.container>(div.item>h2+p>lorem20)*3 -->
+        <div class="item" id="col1">
+          <h2>column 1</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+            obcaecati blanditiis quas exercitationem ea dolore repudiandae
+            voluptatem veritatis nam optio.
+          </p>
+        </div>
+        <div class="item">
+          <h2>column 2</h2>
+          <p>
+            Aliquam iusto, mollitia accusamus dolorum optio autem ut debitis.
+            Enim, nam minus! Perspiciatis, libero temporibus commodi recusandae
+            minus cumque tenetur?
+          </p>
+        </div>
+        <div class="item">
+          <h2>column 3</h2>
+          <p>
+            Laborum ipsam perspiciatis odio fuga, repellendus optio! Quas
+            suscipit, aliquid sunt dicta ipsa praesentium eveniet consequuntur
+            corrupti, error dolorem aut!
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

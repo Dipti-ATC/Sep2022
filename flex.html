@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex</title>
+    <style>
+      .container {
+        height: 400px;
+        background-color: burlywood;
+        /* creating a flex container */
+        display: flex;
+        /* row is default value */
+        /* flex-direction:row; */
+        /* flex-direction: column; */
+        /* flex-direction: column-reverse; */
+        /* flex-direction: row-reverse; */
+        /* by default the value is  no wrap */
+        /* flex-wrap: wrap; */
+        /* flex-wrap:wrap-reverse; */
+        /* flex flow is a shorthand for flex-direction and flex-wrap */
+        /* flex-flow: row wrap; */
+        /* most popular to align content horizontally*/
+        /* justify-content: center; */
+        /* justify-content: flex-start; */
+        /* justify-content: flex-end; */
+        /* justify-content: space-around; */
+        /* justify-content: space-between; */
+        /* align items vertically */
+        /* align-items: center; */
+        /* align-items: flex-start; */
+        /* align-items: flex-end; */
+        /* align-items: stretch; */
+        /* align-items: baseline; */
+      }
+      .item {
+        width: 100px;
+        height: 100px;
+        background-color: aqua;
+        margin: 5px;
+      }
+      /* flex-items properties */
+      #first {
+        /* order:10; */
+        /* flex-grow:3; */
+        /* flex-shrink: 3; */
+      }
+      #third {
+        /* order: 4; */
+        /* flex-grow: 2; */
+        /* Flex-basis is both width and height in a Flexbox, depending on the flex direction.  */
+        /* flex-basis: 200px; */
+        /* aling-self flex-start is the default value */
+        /* align-self: center; */
+        /* align-self: flex-end; */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- div.container>(div.item)*3 -->
+    <div class="container">
+      <div class="item" id="first">First .</div>
+      <div class="item" id="second">Second</div>
+      <div class="item" id="third">Third</div>
+    </div>
+  </body>
+</html>

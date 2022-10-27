@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media</title>
+    <style>
+      body {
+        background-color: aqua;
+      }
+
+      .container {
+        display: none;
+      }
+      /* ------ media queries------
+      @media mediatype and (width/feature){ write your css }*/
+      @media screen and (max-width: 500px) {
+        body {
+          background-color: rgb(199, 61, 61);
+        }
+        .container {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      @media screen and (min-width: 500px) and (max-width: 800px) {
+        body {
+          background-color: rgb(77, 61, 199);
+        }
+        .container {
+          display: flex;
+          flex-flow: wrap;
+        }
+      }
+      @media screen and (min-width: 800px) {
+        body {
+          background-color: rgb(243, 191, 244);
+        }
+        .container {
+          display: flex;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="a1">I am laptop watch the wrapping.</h1>
+      <h1 id="a2">I am tablet</h1>
+      <h1 id="a3">
+        I am phone Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Expedita, nostrum.
+      </h1>
+    </div>
+  </body>
+</html>
