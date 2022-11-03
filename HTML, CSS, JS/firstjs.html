@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Js</title>
+    <style> 
+        #warning{
+            color:red;
+        }
+        </style>
+</head>
+
+<body>
+    <p id="warning"></p>
+ <p id="text">I am from body</p>
+    <script>
+        console.log("Hello World");
+        //declare a variable use let
+        let a= 12;
+        let b= 25; 
+        let c= a*b;
+        console.log(c);
+        console.log(a);
+        console.log(b);
+        let name ="Dipti";
+        console.log(name);
+        let isStudent = true; //false boolean  
+        console.log(isStudent);
+        // Binary operation where a and b are operand and + is operator
+        let d= a+b; 
+        console.log(d);
+        let e= a-b; 
+        console.log(e);
+        let f= a/b; 
+        console.log(f);
+        //urinary operator
+       d++;
+       //try  a++ a-- ++a --a 
+       console.log(d);
+       console.log(a==2);
+       console.log(a>b);// >= this means greater than and equals
+       console.log(name +a);
+       console.log("The value of a is :" +a);
+       //alert("Sam is awesome");
+    //document.write("Sam is awesome");
+    document.getElementById("text").innerHTML=  "i am another JS";
+    document.getElementById("warning").innerHTML=
+     "i am from JS";
+
+    </script>
+</body>
+
+</html>

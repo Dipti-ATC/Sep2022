@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cicrle</title>
+    <style>
+        .circle{
+            height: 100px;
+            width:100px;
+            border-radius:50%;
+            margin:5px;
+            display:inline-block;
+        }
+        #first1{
+            background-color: red;
+        }
+        #first2{
+            background-color: rgb(41, 208, 75);
+        }
+        #first3{
+            background-color: rgb(44, 12, 188);
+        }
+    </style>
+</head>
+<body>
+    <div class="circle" id="first1"></div>
+    <div class="circle" id="first2"></div>
+    <div class="circle" id="first3"></div>
+    <script>
+        document.getElementById("first1").onclick = function(){
+            document.getElementById("first1").style.display="none";
+        }
+        // javascript does not use - instead use camelcase like background-color changes to backgroudColor
+        document.getElementById("first3").onclick = function(){
+            document.getElementById("first3").style.backgroundColor="yellow";
+        }
+        document.getElementById("first2").onclick = function(){
+            document.getElementById("first2").style.visibility="hidden";
+        }
+    </script>
+</body>
+</html>
