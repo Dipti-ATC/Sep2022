@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Const & Random</title>
+</head>
+<body>
+
+    <button onclick="hindiHello()"> Hello in Hindi</button>
+
+    <script>
+        //var can be redeclared and updated
+        // var x= 5; 
+        // var x= 6;
+        //let can not be redeclared but updated
+        // let x= 6; 
+        // x=7;
+        //const can neither redeclared nor updated
+        // const x=3;
+
+// random number
+      let a;
+      a= Math.random();
+      // let a= math.random();
+      console.log(a);
+    let b = Math.floor(5.6);
+    console.log(b);
+       let c= Math.floor(Math.random() *2 );
+       console.log(c);
+        if(c==0){
+            console.log("The random number was zero");
+        }else{
+            console.log("The random number was one");
+        }
+        let id;
+        if(id=="passport"){
+            console.log("you come in");
+        }else if(id=="18+card"){
+            console.log("you come in");
+        }else if(id=="DL"){
+            console.log("you come in");
+        }else{
+            console.log("you not come  in");
+        }
+        //check whether 5 is greater than 2 or not
+        let t =5;//keep changing the value and note the diffrence
+        if(t>2){
+            console.log("t is greater than 2");
+        }else{
+            console.log("t is not greater than 2");
+        }
+        //confirm
+         let msg; 
+        //  msg= confirm("are you ok");
+         if(msg){
+            console.log("you pressed ok");
+         }else{
+            console.log("you pressed cancel");
+         }
+         //prompt
+// let name = prompt("Please enter your name");
+ 
+ // check if not null then only print your name 
+ if(name != null){
+    console.log(name);
+ }else{
+    console.log("you didn't enter a name");
+ }
+ if(name=="owen")
+    {
+        console.log("yes you are Owen");
+    }else{
+        console.log( "you are not Owen but "+ name);
+    }
+    //check out other string methods in 
+    console.log(name.length);
+    console.log(name.toUpperCase());
+    console.log(name.toLowerCase());
+    // console.log("owen"/100);
+    // let coffee= prompt("enter your coffee");
+    // switch(coffee){
+    //     case "flat white":
+    //         console.log("your coffe is" + coffee);
+    //         break;
+    //     case "black coffee":
+    //         console.log("your coffe is" + coffee);
+    //         break;
+    //     case "cappuccino":
+    //         console.log("your coffe is" + coffee);
+    //         break;
+    //     case "latte":
+    //         console.log("your coffe is" + coffee);
+    //         break;
+    //     default:
+    //         console.log("not available");
+    //         break;
+    // }
+// FUNCTION
+ function hello (){ // creating a function name hello
+    alert("hello");
+ }
+//  hello();// callin function name hello
+ function hindiHello(){
+    console.log("In hindi we say - Namaste");
+ }
+ 
+    </script>
+</body>
+</html>
