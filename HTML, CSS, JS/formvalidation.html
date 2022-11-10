@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <label for="username">Username</label>
+            <input id="username" type="text" >
+            <label for="age">Age</label>
+            <input id="age"type="text">
+            <label for="email">Email</label>
+            <input id="email" type="text">
+            <button onclick="validateForm();" >Submit</button>
+        </form>
+    </div>
+<script>
+    function validateForm(){
+    let username = document.getElementById("username").value;
+    let age = document.getElementById("age").value;
+    let email = document.getElementById("email").value;
+    // console.log(username + " "+ age + " "+ email);
+    // alert(username + " "+ age + " "+ email);
+        //check for empty inputs
+        //AND && and OR ||
+        if(username=="" || age=="" || email==""){
+            alert("please enter your usrname");
+        }
+        // alert(username.length);
+        if(username.length<4){
+            alert(username.length);
+        }
+        //NaN - not a number
+        if(isNaN(age)){
+            alert("Enter age in numbers only");
+        }
+        let pattern="[A-Za-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$";
+        if(!email.match(pattern)){
+            alert("please enter valid email");
+        }
+
+
+
+    }
+</script>
+</body>
+</html>

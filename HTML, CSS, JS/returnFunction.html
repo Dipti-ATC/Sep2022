@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function - return </title>
+</head>
+<body>
+    <script>
+        let a=2; 
+        let b=5; 
+        function sum(){
+            document.write(a+b +"<br>");
+        }
+        sum();//function call
+        // passing arguments
+        let x,y,z;
+        function sumArg (x, y,z){
+            document.write(x+y +z+"<br>");
+        }
+        sumArg(3,10,13);
+        sumArg(17,10,12);
+        // create a variable greetings
+        // create a function greet which will print appropriate greetings
+        //pass the greeting based on the time of the day
+         let greetings; 
+         function greet(greetings){
+            document.write( "the correct greeting for now is "+ greetings+"<br>");
+         }
+         greet("good morning"); 
+         greet("good evening"); 
+         greet("good night");
+         //function return value
+
+         let num1, num2, result;
+         function multi(num1, num2){
+            result = num1*num2;
+            return result;
+         }
+         let answer= multi(3,7);
+         document.write(answer);
+
+
+    </script>
+</body>
+</html>

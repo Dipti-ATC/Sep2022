@@ -1,0 +1,39 @@
+<!-- 1. create a function to 
+    generate a random number (0-5)and print out in the console log
+    create a prompt to ask user to guess the number
+    Match if the user entered number is same as random number 
+    
+        if true alert you won else better luck next time 
+2. create a button and onclick call the function. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Game</title>
+</head>
+<body>
+    <button onclick="guess()"> Play game</button>
+    <script>
+        function guess(){
+            let rand= Math.floor(Math.random() *6 );
+            // let name = "DK";
+            console.log(rand);
+            let num = prompt("Guess the number between 0-5");
+            if(num == rand){
+                alert("you won");
+            }else{
+                alert("you lost");
+            }
+        }
+        // create a function guessName
+        // create a variable of your name
+        // create a prompt to ask user to guess your name
+        // check if user entered name is same as your name 
+        //if true send messages you guessed it right
+        //else send messages you don't know me
+        // create a button and call the function onclick
+    </script>
+</body>
+</html>

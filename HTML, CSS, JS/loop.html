@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>loop</title>
+  </head>
+  <body>
+    <script>
+      let i;
+      //for loop
+      // for(i=0; i<7; i++){
+      //     // document.write(i + "<br>") ;
+      //     //if i == 2 print using h1 "I am 2"
+      //     // else using h1 I am not 2
+      //     if(i==2){
+      //         document.write("<h1>"+" I am 2"+"</h1>");
+      //     }
+      //     else{
+      //         document.write("<h1> I am not 2 </h1>");
+      //     }
+      // }
+      // while loop
+      let count = 0;
+      while (count < 5) {
+        document.write("The number is " + count + "<br>");
+        count++;
+      }
+      // create variable counter. This starts at zero
+      // while counter is less than five...
+      // write your name to the document
+      // add to counter
+      // once the while loop is finished, write "ok finished" to document
+    let counter=0;
+    while(counter<5){
+        document.write("Dipti" +"<br>");
+        counter++;
+    }
+    document.write("Ok finished");
+    //guess the name in while loop
+    // create a variable with your name
+    // create a variable name it stillTry and set it to true
+    //while stillTry is true - 
+    //create a prompt and ask user to guess your name
+    //if they guessed your name, set stillTry to false
+    // once loop is finished give message you guessed it write 
+    let name ="Dipti";
+    let stillTry= true;
+    while(stillTry){
+        let guess = prompt("Guess my name");
+        if(name==guess){
+            stillTry=false;
+        }
+    }
+    document.write("you finally guessed it!!");
+    // challenge - count how many attempts you took to guess the name
+    </script>
+  </body>
+</html>
