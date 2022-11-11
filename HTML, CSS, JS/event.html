@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-Event</title>
+</head>
+<body>
+    <!-- div#main.container>ul#nav>li*4 -->
+    <div id="main" class="container">
+        <ul id="nav">
+            <li>Home </li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Product</li>
+        </ul>
+    </div>
+    <div class="container">
+        <p id="para">anothercontainer</p>
+    </div>
+    <div>
+        <h1 id="event">Event listner</h1>
+    </div>
+    <script>
+        let main =document.getElementById("main");
+        console.log(main);
+        let containers = document.getElementsByClassName("container");
+        console.log(containers);
+        let nav = document.querySelectorAll("#nav>li");
+        console.log(nav);
+        //event 
+        let text = document.getElementById("event");
+        console.log(text);
+        text.addEventListener("click", myalert);
+        function myalert(){
+            alert("you clicked on this heading");
+        }
+        //try mouseover on the paragraph and generate an alert
+        //change css
+        let para = document.getElementById("para");
+        para.addEventListener("mouseover",changeCSS);
+        function changeCSS(){
+            // para.style.backgroundColor="green";
+            para.style.cssText="color:green; cursor:pointer; background:red";
+        }
+
+    </script>
+</body>
+</html>

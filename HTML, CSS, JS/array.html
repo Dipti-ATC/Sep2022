@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array-object</title>
+</head>
+<body>
+    <script>
+        let name = "Dipti";//variable hold one value
+        //arrayholds more than one value
+        let names = ["Ken", "Sam","Owen","David", "Monique",2,3];
+       
+       console.log(names);
+       console.log(names.length);
+       console.log(names[2]);
+       //pop remove last element from an array
+       let removedElement = names.pop();
+       console.log(removedElement);
+       console.log(names);//check if 3 is removed
+       //push adds a new element to an array at the end
+       names.push("Logan");
+       console.log(names);//check if Logan is added
+       
+       //shift remove first element from an array
+       let shiftElement = names.shift();
+       console.log(removedElement);
+       console.log(names);//check if Ken is removed
+       //unshift adds a new element to an array at the begining
+       names.unshift("John");
+       console.log(names);//check if John is added
+
+
+    </script>
+</body>
+</html>
